@@ -36,14 +36,16 @@
                         SẢN PHẨM
                     </a>
                     <div class="dropdown-menu myMenu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item myItem my-link" href="{{route('category.show',3)}}">NẾN THƠM - NƯỚC HOA</a>
-                        <a class="dropdown-item myItem my-link" href="{{route('category.show',4)}}">BÌNH HOA</a>
-                        <a class="dropdown-item myItem my-link" href="{{route('category.show',5)}}">KHUNG HÌNH</a>
-                        <a class="dropdown-item myItem my-link" href="{{route('category.show',6)}}">ĐỒ PHA LÊ</a>
-                        <a class="dropdown-item myItem my-link" href="{{route('category.show',7)}}">ĐỒ NHÀ TẮM</a>
-                        <a class="dropdown-item myItem my-link" href="{{route('category.show',8)}}">ĐỒ TRANG TRÍ</a>
-                        <a class="dropdown-item myItem my-link" href="{{route('category.show',10 )}}">KHAY</a>
-                        <a class="dropdown-item myItem my-link" href="{{route('category.show',9)}}">ĐÈN</a>
+                        @foreach($categories as $category)
+                            <a class="dropdown-item myItem my-link" href="{{route('category.show',$category->id)}}">{{$category->name}}</a>
+                        @endforeach
+{{--                        <a class="dropdown-item myItem my-link" href="{{route('category.show',4)}}">BÌNH HOA</a>--}}
+{{--                        <a class="dropdown-item myItem my-link" href="{{route('category.show',5)}}">KHUNG HÌNH</a>--}}
+{{--                        <a class="dropdown-item myItem my-link" href="{{route('category.show',6)}}">ĐỒ PHA LÊ</a>--}}
+{{--                        <a class="dropdown-item myItem my-link" href="{{route('category.show',7)}}">ĐỒ NHÀ TẮM</a>--}}
+{{--                        <a class="dropdown-item myItem my-link" href="{{route('category.show',8)}}">ĐỒ TRANG TRÍ</a>--}}
+{{--                        <a class="dropdown-item myItem my-link" href="{{route('category.show',10 )}}">KHAY</a>--}}
+{{--                        <a class="dropdown-item myItem my-link" href="{{route('category.show',9)}}">ĐÈN</a>--}}
                     </div>
                 </li>
                 <li class="nav-item dropdown">
