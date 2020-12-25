@@ -67,9 +67,10 @@ class ProductController extends Controller
 //   client using
 
     public function showIndex() {
+        $categories = Category::all();
         $brands = Brand::all();
         $products = Product::orderBy('sold','DESC')->limit(16)->get();
-        return view('index',compact('products','brands'));
+        return view('index',compact('products','brands','categories'));
     }
 
     public function showProductDetail($id) {
