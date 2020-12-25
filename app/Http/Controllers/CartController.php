@@ -114,7 +114,7 @@ class CartController extends Controller
 
         }
         session()->forget('cart');
-        return redirect()->route('client.showIndex')->with('checkOutSuccess','Bạn đã đặt hàng thành công');
+        return redirect()->route('cart.showCart')->with('checkOutSuccess','Bạn đã đặt hàng thành công');
 
     }
 }

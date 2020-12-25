@@ -20,7 +20,7 @@
                             <div class="form-group">
                                 <label for="inputName">Image1</label>
                                 <input type="file" accept=".png, .jpg, .jpeg" name="image1" id="inputName"
-                                       class="form-control">
+                                       class="form-control @error('image1') is-invalid @enderror">
                                 @error('image1')
                                 <div style="color: red">{{ $message }}</div>
                                 @enderror
@@ -28,7 +28,7 @@
                             <div class="form-group">
                                 <label for="inputName">Image2</label>
                                 <input type="file" accept=".png, .jpg, .jpeg" name="image2" id="inputName"
-                                       class="form-control">
+                                       class="form-control @error('image2') is-invalid @enderror">
                                 @error('image2')
                                 <div style="color: red">{{ $message }}</div>
                                 @enderror
@@ -36,7 +36,7 @@
                             <div class="form-group">
                                 <label for="inputName">Product Name</label>
                                 <input type="text" name="productName" id="inputName" placeholder="Input product name"
-                                       class="form-control">
+                                       class="form-control @error('productName') is-invalid @enderror">
                                 @error('productName')
                                 <div style="color: red">{{ $message }}</div>
                                 @enderror
@@ -44,7 +44,7 @@
                             <div class="form-group">
                                 <label for="inputName">Price</label>
                                 <input type="text" name="price" id="inputName" placeholder="Input price"
-                                       class="form-control">
+                                       class="form-control @error('price') is-invalid @enderror">
                                 @error('price')
                                 <div style="color: red">{{ $message }}</div>
                                 @enderror
@@ -52,14 +52,14 @@
                             <div class="form-group">
                                 <label for="inputName">Views</label>
                                 <input type="text" name="views" id="inputName" placeholder="Input views"
-                                       class="form-control">
+                                       class="form-control @error('views') is-invalid @enderror">
                                 @error('views')
                                 <div style="color: red">{{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="form-floating">
                                 <label for="floatingTextarea">Description</label>
-                                <textarea  class="form-control" name="description" placeholder="Input description"
+                                <textarea  class="form-control @error('description') is-invalid @enderror" name="description" placeholder="Input description"
                                           id="ckeditor1"></textarea>
 
                                 @error('description')
@@ -69,7 +69,7 @@
                             <div class="form-group">
                                 <label for="inputName">Instock</label>
                                 <input type="text" name="instock" id="inputName" placeholder="Input instock"
-                                       class="form-control">
+                                       class="form-control @error('instock') is-invalid @enderror">
                                 @error('instock')
                                 <div style="color: red">{{ $message }}</div>
                                 @enderror
@@ -77,14 +77,14 @@
                             <div class="form-group">
                                 <label for="inputName">Sold</label>
                                 <input type="text" name="sold" id="inputName" placeholder="Input sold"
-                                       class="form-control">
+                                       class="form-control @error('sold') is-invalid @enderror">
                                 @error('sold')
                                 <div style="color: red">{{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="form-group">
                                 <label for="inputStatus">Category</label>
-                                <select name="category_id" class="form-control custom-select">
+                                <select name="category_id" class="form-control custom-select @error('category_id') is-invalid @enderror">
                                     @foreach($categories as $key => $category)
                                         <option
                                             value="{{$category->id}}">{{$category->name}}</option>
@@ -96,7 +96,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="inputStatus">Brand</label>
-                                <select name="brand_id" class="form-control custom-select">
+                                <select name="brand_id" class="form-control custom-select @error('brand_id') is-invalid @enderror">
                                     @foreach($brands as $key => $brand)
                                         <option
                                             value="{{$brand->id}}">{{$brand->name}}</option>

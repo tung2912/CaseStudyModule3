@@ -21,7 +21,7 @@
                                     <th>Address</th>
                                     <th>Email</th>
                                     <th>Phone</th>
-                                    <th>Actions</th>
+{{--                                    <th>Actions</th>--}}
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -36,18 +36,18 @@
 {{--                                            <span style="display: none" class="descriptionHTML{{$product->id}}">{!!$product->description!!}</span>--}}
 {{--                                        </td>--}}
                                         <td>{{$customer->phone}}</td>
-                                        <td>
-                                            <div>
-                                                <a data-placement="top"
-                                                   href="{{route('products.edit',$customer->id)}}">
-                                                    <i class="nav-icon fas fa-edit"></i>Edit
-                                                </a>
-                                                <a class="text-danger"
-                                                   onclick="return confirm('Are you sure you want to delete')"
-                                                   href="{{route('products.delete',$customer->id)}}">
-                                                    <i class="nav-icon far fa-trash-alt"></i>Delete</a>
-                                            </div>
-                                        </td>
+{{--                                        <td>--}}
+{{--                                            <div>--}}
+{{--                                                <a data-placement="top"--}}
+{{--                                                   href="{{route('products.edit',$customer->id)}}">--}}
+{{--                                                    <i class="nav-icon fas fa-edit"></i>Edit--}}
+{{--                                                </a>--}}
+{{--                                                <a class="text-danger"--}}
+{{--                                                   onclick="return confirm('Are you sure you want to delete')"--}}
+{{--                                                   href="{{route('products.delete',$customer->id)}}">--}}
+{{--                                                    <i class="nav-icon far fa-trash-alt"></i>Delete</a>--}}
+{{--                                            </div>--}}
+{{--                                        </td>--}}
                                 </tr>
                                 @empty
                                     <tr>
@@ -62,7 +62,7 @@
                                     <th>Address</th>
                                     <th>Email</th>
                                     <th>Phone</th>
-                                    <th>Actions</th>
+{{--                                    <th>Actions</th>--}}
                                 </tr>
                                 </tfoot>
                             </table>

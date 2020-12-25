@@ -5,59 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1537aa62-4322-49fb-944d-e25e859b4c12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Cart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Repositories/BrandRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Repositories/OrderRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Services/BrandService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Services/OrderService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/admin_resource/css/mycss.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/customer_resource/css/category.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/customer_resource/css/checkOut.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/customer_resource/css/mycss.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/customer_resource/css/productdetail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/customer_resource/js/toastr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/brands/add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/brands/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/brands/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/customers/details.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/orders/details.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/orders/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/users/userProfile.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customers/about.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customers/allProducts.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customers/cart/checkout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customers/cart/list.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customers/categories/category1.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customers/categories/searchProducts.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customers/contact.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customers/layout/master.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/customers/productDetails/productDetails.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CreatUserRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CreatUserRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Services/CategoryService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/CategoryService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Services/CustomerService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/CustomerService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Services/ProductService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/ProductService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Services/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/UserService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Customer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/ckeditor/ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/ckeditor/ckeditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/categories/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/core/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/core/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/core/main-sider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/core/main-sider.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/core/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/core/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/customers/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/customers/list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/products/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customers/cart/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customers/cart/checkout.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +143,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/OpenSIS" />
+    <property name="last_opened_file_path" value="$USER_HOME$/ThiModule3" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -245,6 +197,8 @@
       <workItem from="1608772484758" duration="10472000" />
       <workItem from="1608792065619" duration="10270000" />
       <workItem from="1608820899987" duration="1867000" />
+      <workItem from="1608858531682" duration="417000" />
+      <workItem from="1608861275179" duration="4695000" />
     </task>
     <servers />
   </component>

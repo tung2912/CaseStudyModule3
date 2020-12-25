@@ -26,16 +26,29 @@
                         <div class="label-shipInfo">
                             <label for="">Thông tin giao hàng</label>
                         </div>
-                        <div class="input-group">
-                            <input type="text" name="name" class="form-control float-right" placeholder="Full name" required>
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Full name">
+                            @error('name')
+                            <div style="color: red">{{ $message }}</div>
+                            @enderror
                         </div>
-                        <div class="input-group mt-2">
-                            <input type="text" name="address" class="form-control" placeholder="Address" required>
+                        <div class="form-group mt-2">
+                            <input type="text" name="address" class="form-control @error('address') is-invalid @enderror" placeholder="Address">
+                            @error('address')
+                            <div style="color: red">{{ $message }}</div>
+                            @enderror
                         </div>
-                        <div class="input-group mt-2">
-                            <input type="text" name="phone" class="form-control float-left mr-1" placeholder="Phone Number" required>
-                            <input type="email" name="email" class="form-control float-right ml-1" placeholder="Email address" required>
-                            <div class="clearfix"></div>
+                        <div class="form-group mt-2">
+                            <input type="text" name="phone" class="form-control @error('phone') is-invalid @enderror" placeholder="Phone Number">
+                            @error('phone')
+                            <div style="color: red">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        <div class="form-group mt-2">
+                            <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email address">
+                            @error('email')
+                            <div style="color: red">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="float-left mt-2">
                             <a href="{{route('cart.showCart')}}" class="cart_return">
