@@ -54,13 +54,9 @@
                         THƯƠNG HIỆU
                     </a>
                     <div class="dropdown-menu myMenu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item myItem my-link" href="{{route('brand.show',3)}}">BACCARAT</a>
-                        <a class="dropdown-item myItem my-link" href="{{route('brand.show',4)}}">CIRE TRVDON</a>
-                        <a class="dropdown-item myItem my-link" href="{{route('brand.show',5)}}">ARCAHORN</a>
-                        <a class="dropdown-item myItem my-link" href="{{route('brand.show',6)}}">FUSTENBERG</a>
-                        <a class="dropdown-item myItem my-link" href="{{route('brand.show',7)}}">RIVIERE</a>
-                        <a class="dropdown-item myItem my-link" href="{{route('brand.show',8)}}">RALPH LAURENT</a>
-                        <a class="dropdown-item myItem my-link" href="{{route('brand.show',9)}}">DECOR WALTHER</a>
+                        @foreach($brands as $brand)
+                            <a class="dropdown-item myItem my-link" href="{{route('brand.show',$brand->id)}}">{{$brand->name}}</a>
+                        @endforeach
                     </div>
                 </li>
                 <li class="nav-item">
