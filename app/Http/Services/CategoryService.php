@@ -32,6 +32,7 @@ class CategoryService implements ServiceInterface
     {
         // TODO: Implement add() method.
         $obj->name = $request->categoryName;
+        $obj->image = $request->categoryImage;
         $obj->description = $request->description;
         $this->categoryRepository->save($obj);
 
@@ -46,6 +47,7 @@ class CategoryService implements ServiceInterface
     {
         // TODO: Implement update() method.
         $obj->name = $request->categoryName;
+        $obj->image = $request->categoryImage;
         $obj->description = $request->description;
         $this->categoryRepository->save($obj);
     }

@@ -26,6 +26,14 @@
                                 <div style="color: red">{{ $message }}</div>
                                 @enderror
                             </div>
+                            <div class="form-group">
+                                <label for="inputName">Category Image</label>
+                                <input type="text" name="categoryImage" id="inputName" placeholder="Input category image"
+                                       class="form-control @error('categoryImage') is-invalid @enderror">
+                                @error('categoryImage')
+                                <div style="color: red">{{ $message }}</div>
+                                @enderror
+                            </div>
                             <div class="form-floating">
                                 <label for="floatingTextarea">Description</label>
                                 <textarea class="form-control @error('description') is-invalid @enderror" name="description" placeholder="Input description"

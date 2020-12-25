@@ -27,6 +27,7 @@
                                     <th>Instock</th>
                                     <th>Sold</th>
                                     <th>Category</th>
+                                    <th>Brand</th>
                                     <th>Actions</th>
                                 </tr>
                                 </thead>
@@ -45,6 +46,7 @@
                                         <td>{{$product->instock}}</td>
                                         <td>{{$product->sold}}</td>
                                         <td>{{$product->category->name}}</td>
+                                        <td>{{$product->brand->name ?? ""}}</td>
                                         <td>
                                             <div>
                                                 <a data-placement="top"
@@ -74,6 +76,7 @@
                                     <th>Instock</th>
                                     <th>Sold</th>
                                     <th>Category</th>
+                                    <th>Brand</th>
                                     <th>Actions</th>
                                 </tr>
                                 </tfoot>

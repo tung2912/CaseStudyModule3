@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
     <!-- Toastr -->
     <link rel="stylesheet" href="plugins/toastr/toastr.css">
+    <link rel="stylesheet" href="{{asset('admin_resource/css/mycss.css')}}">
 
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
@@ -140,6 +141,11 @@
 @if(\Illuminate\Support\Facades\Session::has('deleteSuccess'))
     <script>
         toastr.success("{!! Session::get('deleteSuccess') !!}")
+    </script>
+@endif
+@if(\Illuminate\Support\Facades\Session::has('successChangeStatus'))
+    <script>
+        toastr.success("{!! Session::get('successChangeStatus') !!}")
     </script>
 @endif
 @yield('js')

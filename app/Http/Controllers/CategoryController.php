@@ -31,7 +31,7 @@ class CategoryController extends Controller
     {
         $category = new Category();
         $this->categoryService->add($request, $category);
-        return redirect()->route('categories.index');
+        return redirect()->route('categories.index')->with("addSuccess","Successfully Added");
     }
 
     public function edit($id)
@@ -44,13 +44,13 @@ class CategoryController extends Controller
     {
         $category = $this->categoryService->findByID($id);
         $this->categoryService->update($request,$category);
-        return redirect()->route('categories.index');
+        return redirect()->route('categories.index')->with('updateSuccess','Successfully Updated');
     }
 
     public function destroy($id)
     {
         $category = $this->categoryService->findByID($id);
         $category->delete();
-        return redirect()->route('categories.index');
+        return redirect()->route('categories.index')->with('deleteSuccess','Successfully deleted');
     }
 }

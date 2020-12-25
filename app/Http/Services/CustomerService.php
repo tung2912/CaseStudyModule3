@@ -23,6 +23,7 @@ class CustomerService implements ServiceInterface
     function findByID($id)
     {
         // TODO: Implement findByID() method.
+        return $this->customerRepository->findById($id);
     }
 
     function add($request, $obj)

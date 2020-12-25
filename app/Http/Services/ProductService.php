@@ -32,10 +32,13 @@ class ProductService implements ServiceInterface
         $obj->name = $request->productName;
         $obj->price = $request->price;
         $obj->description = $request->description;
+        $obj->views = $request->views;
         $obj->instock = $request->instock;
         $obj->sold = $request->sold;
         $obj->category_id = $request->category_id;
+        $obj->brand_id = $request->brand_id;
         $this->uploadImage1($obj,$request);
+        $this->uploadImage2($obj,$request);
         $this->productRepository->save($obj);
     }
 
@@ -50,10 +53,13 @@ class ProductService implements ServiceInterface
         $obj->name = $request->productName;
         $obj->price = $request->price;
         $obj->description = $request->description;
+        $obj->views = $request->views;
         $obj->instock = $request->instock;
         $obj->sold = $request->sold;
         $obj->category_id = $request->category_id;
+        $obj->brand_id = $request->brand_id;
         $this->uploadImage1($obj,$request);
+        $this->uploadImage2($obj,$request);
         $this->productRepository->save($obj);
 
     }
@@ -61,6 +67,12 @@ class ProductService implements ServiceInterface
         if ($request->hasFile('image1')) {
             $pathImage = $request->file('image1')->store('public/images');
             $obj->image1 = $pathImage;
+        }
+    }
+    function uploadImage2($obj, $request){
+        if ($request->hasFile('image2')) {
+            $pathImage = $request->file('image2')->store('public/images');
+            $obj->image2 = $pathImage;
         }
     }
 

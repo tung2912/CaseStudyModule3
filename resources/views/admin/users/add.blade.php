@@ -17,25 +17,9 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            {{--                            <div class="form-group">--}}
-                            {{--                                <label for="inputName">Họ tên</label>--}}
-                            {{--                                <input type="text" name="name" id="inputName" placeholder="Nhập tên đầy đủ"--}}
-                            {{--                                       class="form-control">--}}
-                            {{--                                @error('name')--}}
-                            {{--                                <div style="color: red">{{ $message }}</div>--}}
-                            {{--                                @enderror--}}
-                            {{--                            </div>--}}
-                            {{--                            <div class="form-group">--}}
-                            {{--                                <label for="inputName">Ảnh</label>--}}
-                            {{--                                <input type="file" accept=".png, .jpg, .jpeg" name="image" id="inputName"--}}
-                            {{--                                       class="form-control">--}}
-                            {{--                                @error('name')--}}
-                            {{--                                <div style="color: red">{{ $message }}</div>--}}
-                            {{--                                @enderror--}}
-                            {{--                            </div>--}}
                             <div class="form-group">
                                 <label for="inputName">User Name</label>
-                                <input type="text" name="username" id="inputName" placeholder="Input user name"
+                                <input type="text" name="name" id="inputName" placeholder="Input user name"
                                        class="form-control @error('username') is-invalid @enderror">
                                 @error('username')
                                 <div style="color: red">{{ $message }}</div>

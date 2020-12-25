@@ -34,6 +34,14 @@
                                 <div style="color: red">{{ $message }}</div>
                                 @enderror
                             </div>
+                            <div class="form-group">
+                                <label for="inputName">Category Image</label>
+                                <input type="text" name="categoryImage" id="inputName" placeholder="Input Category Image"
+                                       class="form-control" value="{{$category->image??""}}">
+                                @error('categoryImage')
+                                <div style="color: red">{{ $message }}</div>
+                                @enderror
+                            </div>
                             <div class="form-floating">
                                 <label for="floatingTextarea">Description</label>
                                 <textarea class="form-control" name="description" placeholder="Input description"

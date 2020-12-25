@@ -18,10 +18,18 @@
                         </div>
                         <div class="card-body">
                             <div class="form-group">
-                                <label for="inputName">Image</label>
+                                <label for="inputName">Image1</label>
                                 <input type="file" accept=".png, .jpg, .jpeg" name="image1" id="inputName"
+                                       class="form-control" >
+                                @error('image1')
+                                <div style="color: red">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group">
+                                <label for="inputName">Image2</label>
+                                <input type="file" accept=".png, .jpg, .jpeg" name="image2" id="inputName"
                                        class="form-control">
-                                @error('name')
+                                @error('image2')
                                 <div style="color: red">{{ $message }}</div>
                                 @enderror
                             </div>
@@ -51,6 +59,14 @@
                                 @enderror
                             </div>
                             <div class="form-group">
+                                <label for="inputName">Views</label>
+                                <input type="text" name="views" value="{{$product->views ?? " "}}" id="inputName" placeholder="Input views"
+                                       class="form-control">
+                                @error('views')
+                                <div style="color: red">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group">
                                 <label for="inputStatus">Category</label>
                                 <select name="category_id" class="form-control custom-select">
                                     @foreach($categories as $key => $category)
@@ -59,6 +75,18 @@
                                     @endforeach
                                 </select>
                                 @error('category_id')
+                                <div style="color: red">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group">
+                                <label for="inputStatus">Brand</label>
+                                <select name="brand_id" class="form-control custom-select">
+                                    @foreach($brands as $key => $brand)
+                                        <option
+                                            value="{{$brand->id}}">{{$brand->name}}</option>
+                                    @endforeach
+                                </select>
+                                @error('brand_id')
                                 <div style="color: red">{{ $message }}</div>
                                 @enderror
                             </div>

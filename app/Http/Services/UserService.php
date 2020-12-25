@@ -30,7 +30,7 @@ class UserService implements ServiceInterface
     function add($request, $obj = null)
     {
         // TODO: Implement add() method.
-        $obj->name = $request->username;
+        $obj->name = $request->name;
         $obj->email = $request->email;
         $obj->password = Hash::make($request->password);
         $obj->role_id = $request->role_id;
