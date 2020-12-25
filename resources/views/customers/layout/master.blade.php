@@ -36,9 +36,14 @@
                         SẢN PHẨM
                     </a>
                     <div class="dropdown-menu myMenu" aria-labelledby="navbarDropdown">
-                        @foreach($categories as $category)
-                            <a class="dropdown-item myItem my-link" href="{{route('category.show',$category->id)}}">{{$category->name}}</a>
-                        @endforeach
+                        <a class="dropdown-item myItem my-link" href="{{route('category.show',3)}}">NẾN THƠM - NƯỚC HOA</a>
+                        <a class="dropdown-item myItem my-link" href="{{route('category.show',4)}}">BÌNH HOA</a>
+                        <a class="dropdown-item myItem my-link" href="{{route('category.show',5)}}">KHUNG HÌNH</a>
+                        <a class="dropdown-item myItem my-link" href="{{route('category.show',6)}}">ĐỒ PHA LÊ</a>
+                        <a class="dropdown-item myItem my-link" href="{{route('category.show',7)}}">ĐỒ NHÀ TẮM</a>
+                        <a class="dropdown-item myItem my-link" href="{{route('category.show',8)}}">ĐỒ TRANG TRÍ</a>
+                        <a class="dropdown-item myItem my-link" href="{{route('category.show',10 )}}">KHAY</a>
+                        <a class="dropdown-item myItem my-link" href="{{route('category.show',9)}}">ĐÈN</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -47,10 +52,14 @@
                         THƯƠNG HIỆU
                     </a>
                     <div class="dropdown-menu myMenu" aria-labelledby="navbarDropdown">
-{{--                        @forelse($brands as $brand)--}}
-{{--                            <a class="dropdown-item myItem my-link" href="{{route('brand.show',$brand->id)}}">{{$brand->name}}</a>--}}
-{{--                        @endforelse--}}
-{{--                    </div>--}}
+                        <a class="dropdown-item myItem my-link" href="{{route('brand.show',3)}}">BACCARAT</a>
+                        <a class="dropdown-item myItem my-link" href="{{route('brand.show',4)}}">CIRE TRVDON</a>
+                        <a class="dropdown-item myItem my-link" href="{{route('brand.show',5)}}">ARCAHORN</a>
+                        <a class="dropdown-item myItem my-link" href="{{route('brand.show',6)}}">FUSTENBERG</a>
+                        <a class="dropdown-item myItem my-link" href="{{route('brand.show',7)}}">RIVIERE</a>
+                        <a class="dropdown-item myItem my-link" href="{{route('brand.show',8)}}">RALPH LAURENT</a>
+                        <a class="dropdown-item myItem my-link" href="{{route('brand.show',9)}}">DECOR WALTHER</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link my-link" href="{{route('home.about')}}">GIỚI THIỆU</a>
