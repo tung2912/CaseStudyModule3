@@ -36,9 +36,9 @@
                         SẢN PHẨM
                     </a>
                     <div class="dropdown-menu myMenu" aria-labelledby="navbarDropdown">
-                        @forelse($categories as $category)
+                        @foreach($categories as $category)
                             <a class="dropdown-item myItem my-link" href="{{route('category.show',$category->id)}}">{{$category->name}}</a>
-                        @endforelse
+                        @endforeach
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -47,10 +47,10 @@
                         THƯƠNG HIỆU
                     </a>
                     <div class="dropdown-menu myMenu" aria-labelledby="navbarDropdown">
-                        @forelse($brands as $brand)
-                            <a class="dropdown-item myItem my-link" href="{{route('brand.show',$brand->id)}}">{{$brand->name}}</a>
-                        @endforelse
-                    </div>
+{{--                        @forelse($brands as $brand)--}}
+{{--                            <a class="dropdown-item myItem my-link" href="{{route('brand.show',$brand->id)}}">{{$brand->name}}</a>--}}
+{{--                        @endforelse--}}
+{{--                    </div>--}}
                 </li>
                 <li class="nav-item">
                     <a class="nav-link my-link" href="{{route('home.about')}}">GIỚI THIỆU</a>
