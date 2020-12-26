@@ -84,23 +84,26 @@ class ProductController extends Controller
 
     public function showProductByCategory($id) {
         $categories = Category::all();
+        $brands = Brand::all();
         $products = Product::where('category_id',$id)->get();
         $category = Category::where('id',$id)->first();
-        return view('customers.categories.category1',compact('products','categories','category'));
+        return view('customers.categories.category1',compact('products','categories','category','brands'));
     }
 
     public function showProductByBrand($id) {
+        $categories = Category::all();
         $brands = Brand::all();
         $products = Product::where('brand_id',$id)->get();
         $brand = Brand::where('id',$id)->first();
-        return view('customers.categories.category1',compact('products','brands','brand'));
+        return view('customers.categories.category1',compact('products','brands','brand','categories'));
     }
 
     public function searchProductByName(Request $request) {
         $searchValue = $request->searchValue;
         $products = Product::where('name','like',"%$searchValue%")->get();
         $brands = Brand::all();
-        return view('customers.categories.searchProducts',compact('products','brands'));
+        $categories = Category::all();
+        return view('customers.categories.searchProducts',compact('products','brands','categories'));
 
     }
 }
