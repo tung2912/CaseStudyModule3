@@ -61,22 +61,22 @@
     <div class="line no-space"></div>
     <div class="group-brand text-center pt50">
         <div class="wrap-main">
-            <a href="{{route('brand.show',3)}}">
+            <a href="{{route('brand.show',1)}}">
                 <img src="https://onlinestore.thaicong.com/wp-content/uploads/2020/04/baccarat-logo.jpg" alt="">
             </a>
-            <a href="{{route('brand.show',4)}}">
+            <a href="{{route('brand.show',2)}}">
                 <img src="https://onlinestore.thaicong.com/wp-content/uploads/2020/04/trudon-logo.jpg" alt="">
             </a>
-            <a href="{{route('brand.show',5)}}">
+            <a href="{{route('brand.show',3)}}">
                 <img src="https://onlinestore.thaicong.com/wp-content/uploads/2020/04/arcahorn-logo.jpg" alt="">
             </a>
-            <a href="{{route('brand.show',6)}}">
+            <a href="{{route('brand.show',4)}}">
                 <img src="https://onlinestore.thaicong.com/wp-content/uploads/2020/04/fur-logo.jpg" alt="">
             </a>
-            <a href="{{route('brand.show',7)}}">
+            <a href="{{route('brand.show',5)}}">
                 <img src="https://onlinestore.thaicong.com/wp-content/uploads/2020/04/riviere-logo.jpg" alt="">
             </a>
-            <a href="{{route('brand.show',8)}}">
+            <a href="{{route('brand.show',6)}}">
                 <img src="https://onlinestore.thaicong.com/wp-content/uploads/2020/04/lauren-logo.jpg" alt="">
             </a>
         </div>
@@ -84,7 +84,7 @@
     <div class="group-categories pt50">
         <div class="box-flex">
             <div class="box-flex">
-                <a href="{{route('category.show',3)}}">
+                <a href="{{route('category.show',1)}}">
                     <div class="item-categories small">
                         <div class="img">
                             <img src="https://onlinestore.thaicong.com/wp-content/uploads/2020/04/Category-1.jpg"
@@ -101,7 +101,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{route('category.show',4)}}">
+                <a href="{{route('category.show',2)}}">
                     <div class="item-categories small">
                         <div class="img">
                             <img src="https://onlinestore.thaicong.com/wp-content/uploads/2020/04/Baccarat-3.jpg"
@@ -120,7 +120,7 @@
                 </a>
             </div>
             <div class="box-flex">
-                <a href="{{route('category.show',5)}}">
+                <a href="{{route('category.show',3)}}">
                     <div class="item-categories small">
                         <div class="img">
                             <img src="https://onlinestore.thaicong.com/wp-content/uploads/2020/04/Category-3.jpg"
@@ -131,13 +131,13 @@
                                 KHUNG HÌNH
                             </div>
                             <div class="mt10">
-                                <a href="{{route('category.show',5)}}" class="link">XEM TẤT CẢ</a>
+                                <a href="{{route('category.show',4)}}" class="link">XEM TẤT CẢ</a>
                             </div>
                             <a href="" class="full-link"></a>
                         </div>
                     </div>
                 </a>
-                <a href="{{route('category.show',6)}}">
+                <a href="{{route('category.show',4)}}">
                     <div class="item-categories small">
                         <div class="img">
                             <img src="https://onlinestore.thaicong.com/wp-content/uploads/2020/04/Baccarat-5.jpg"
@@ -158,7 +158,7 @@
         </div>
         <div class="box-flex">
             <div class="box-flex">
-                <a href="{{route('category.show',7)}}">
+                <a href="{{route('category.show',5)}}">
                     <div class="item-categories small">
                         <div class="img">
                             <img src="https://onlinestore.thaicong.com/wp-content/uploads/2020/04/Category-13.jpg"
@@ -175,7 +175,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{route('category.show',8)}}">
+                <a href="{{route('category.show',6)}}">
                     <div class="item-categories small">
                         <div class="img">
                             <img src="https://onlinestore.thaicong.com/wp-content/uploads/2020/04/Category-7.jpg"
@@ -194,7 +194,7 @@
                 </a>
             </div>
             <div class="box-flex">
-                <a href="{{route('category.show',10)}}">
+                <a href="{{route('category.show',7)}}">
                     <div class="item-categories small">
                         <div class="img">
                             <img src="https://onlinestore.thaicong.com/wp-content/uploads/2020/04/Baccarat-1.jpg"
@@ -211,7 +211,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{route('category.show',9)}}">
+                <a href="{{route('category.show',8)}}">
                     <div class="item-categories small">
                         <div class="img">
                             <img src="https://onlinestore.thaicong.com/wp-content/uploads/2020/04/Baccarat-4.jpg"
