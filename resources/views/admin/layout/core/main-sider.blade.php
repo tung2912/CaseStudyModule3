@@ -119,6 +119,32 @@
                             </li>
                         </ul>
                     </li>
+                <li class="nav-item has-treeview">
+                    <a href="#"
+                       class="nav-link ">
+                        <i class="nav-icon fas fa-layer-group"></i>
+                        <p>
+                            Manage Brands
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{route('brands.index')}}"
+                               class="nav-link ">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Brands List</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('Brands.create')}}"
+                               class="nav-link ">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Add Brand </p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
                     <li class="nav-item has-treeview ">
                         <a href="#"
