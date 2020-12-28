@@ -48,4 +48,5 @@ class User extends Authenticatable
     {
        return $this->role->id == \App\Models\RoleConstants::ROLE_ADMIN ? "badge-success": "badge-info";
     }
+
 }

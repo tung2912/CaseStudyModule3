@@ -22,8 +22,10 @@ class Product extends Model
         return $this->belongsToMany(Order::class,'orderdetails','product_id','order_id')->withPivot('priceEach','buy_quantity');
     }
 
-    function getNameImage(){
-        return '/storage/images/' .ltrim($this->image, '/public/images/');
+    function getNameImage1(){
+        return "https://tungnguyenc3.s3.amazonaws.com/".$this->image1;
     }
-
+    function getNameImage2(){
+        return "https://tungnguyenc3.s3.amazonaws.com/".$this->image2;
+    }
 }
