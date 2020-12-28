@@ -27,6 +27,14 @@
                                 @enderror
                             </div>
                             <div class="form-group">
+                                <label for="inputName">Brand Image</label>
+                                <input type="text" name="brandImage" id="inputName" placeholder="Input Category Image"
+                                       class="form-control" value="{{$brand->image??""}}">
+                                @error('categoryImage')
+                                <div style="color: red">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group">
                                 <input type="submit" value="Edit" class="btn btn-success">
                                 <a href="{{route('brands.index')}}" class="btn btn-secondary">Back</a>
                             </div>
