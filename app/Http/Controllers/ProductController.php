@@ -20,6 +20,7 @@ class ProductController extends Controller
         $this->productService = $productService;
     }
 
+//    admin using
     public function index()
     {
         $categories = Category::all();

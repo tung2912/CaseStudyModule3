@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Cart;
 use App\Http\Requests\checkoutRequest;
 use App\Models\Brand;
+use App\Models\Category;
 use App\Models\Customer;
 use App\Models\Order;
 use App\Models\Product;
@@ -25,7 +26,8 @@ class CartController extends Controller
     public function showCart(){
         $cart = session('cart');
         $brands = Brand::all();
-        return view('customers.cart.list',compact('cart','brands'));
+        $categories = Category::all();
+        return view('customers.cart.list',compact('cart','brands','categories'));
     }
 
     public function destroy($idProduct){
