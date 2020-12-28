@@ -32,7 +32,7 @@ class BrandService implements ServiceInterface
     {
         // TODO: Implement add() method.
         $obj->name = $request->brandName;
-        $obj->image = $request->image;
+        $obj->image = $request->brandImage;
         $this->brandRepository->save($obj);
 
     }
@@ -46,6 +46,7 @@ class BrandService implements ServiceInterface
     {
         // TODO: Implement update() method.
         $obj->name = $request->brandName;
+        $obj->image = $request->brandImage;
         $this->brandRepository->save($obj);
     }
 }
