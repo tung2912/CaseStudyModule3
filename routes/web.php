@@ -23,20 +23,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[ProductController::class,'showIndex'])->name('client.showIndex');
-Route::get('/productDetails',function (){
-    return view('customers.productDetails.productDetails');
-});
-Route::get('/productDetails/{product_id}',[ProductController::class,'showProductDetail'])->name('client.showProductDetails');
+Route::get('/',[HomeController::class,'showIndex'])->name('client.showIndex');
+//Route::get('/productDetails',function (){
+//    return view('customers.productDetails.productDetails');
+//});
+Route::get('/productDetails/{product_id}',[HomeController::class,'showProductDetail'])->name('client.showProductDetails');
 Route::get('/about',[HomeController::class,'about'])->name('home.about');
 Route::get('/contact',[HomeController::class,'contact'])->name('home.contact');
 Route::get('/allProducts',[HomeController::class,'allProducts'])->name('home.allProducts');
-Route::prefix('categories')->group(function (){
-    Route::get('/category/{category_id}',[ProductController::class,'showProductByCategory'])->name('category.show');
-    Route::get('/brand/{brand_id}',[ProductController::class,'showProductByBrand'])->name('brand.show');
-    Route::post('searchProduct',[ProductController::class,'searchProductByName'])->name('category.search');
-});
-
+Route::post('searchProduct',[HomeController::class,'searchProductByName'])->name('category.search');
+Route::get('/brand/{brand_id}',[HomeController::class,'showProductByBrand'])->name('brand.show');
+Route::get('/category/{category_id}',[HomeController::class,'showProductByCategory'])->name('category.show');
 
 Route::get('/login',[LoginController::class,'showLogin'])->name('login');
 Route::post('/login',[LoginController::class,'login'])->name('admin.login');
