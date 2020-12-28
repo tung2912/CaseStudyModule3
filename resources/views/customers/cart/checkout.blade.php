@@ -73,7 +73,7 @@
                             <tr>
                                 <td>
                                     <div class="img_wrapper">
-                                        <img src="{{asset('storage/'.substr($item['product']->image1,7))}}" alt="" class="imgCheckout">
+                                        <img src="{{$item['product']->getNameImage1()}}" alt="" class="imgCheckout">
                                         <span class="qtyCheckout">
                                             {{$item['totalQty']}}
                                         </span>

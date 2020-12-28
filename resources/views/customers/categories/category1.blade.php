@@ -15,7 +15,7 @@
             <div>
                 <div class="item-product-store">
                     <div class="img">
-                        <img style="width: 100%" src="{{asset('storage/'.substr($product->image1,7))}}" alt="">
+                        <img style="width: 100%" src="{{$product->getNameImage1()}}" alt="">
                     </div>
                     <div class="brand">{{$product->brand->name}}</div>
                     <div class="proName">{{$product->name}}</div>

@@ -20,10 +20,10 @@
                 <div class="col-7">
                     <div class="row">
                         <div class="col-3">
-                            <img class="smallImg mb-3" src="{{asset('storage/'.substr($product->image1,7))}}" alt="" onclick="myFunction(this);">
-                            <img class="smallImg mb-3" src="{{asset('storage/'.substr($product->image2,7))}}" alt="" onclick="myFunction(this);">
+                            <img class="smallImg mb-3" src="{{$product->getNameImage1()}}" alt="" onclick="myFunction(this);">
+                            <img class="smallImg mb-3" src="{{$product->getNameImage2()}}" alt="" onclick="myFunction(this);">
                         </div>
-                        <div class="col-9"><img class="bigImg" id="expandedImg" src="{{asset('storage/'.substr($product->image1,7))}}" alt=""></div>
+                        <div class="col-9"><img class="bigImg" id="expandedImg" src="{{$product->getNameImage1()}}" alt=""></div>
                     </div>
                 </div>
                 <div class="col-5">

@@ -13,7 +13,7 @@
                             <div class="col-sm-7">
                                 <div class="d-flex al-start">
                                     <div class="img-pr">
-                                        <a href=""><img style="width: 100%" src="{{asset('storage/'.substr($item['product']->image1,7))}}" alt=""></a>
+                                        <a href=""><img style="width: 100%" src="{{$item['product']->getNameImage1()}}" alt=""></a>
                                     </div>
                                     <div class="text">
                                         <p>
