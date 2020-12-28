@@ -70,13 +70,13 @@ class ProductService implements ServiceInterface
 
             $pathImage = Storage::disk('s3')->put('images', $request->image1, 'public');
 
-            $obj->image1 = "https://tungnguyenc3.s3.amazonaws.com/".$pathImage;
+            $obj->image1 = $pathImage;
         }
     }
     function uploadImage2($obj, $request){
         if ($request->hasFile('image2')) {
             $pathImage = Storage::disk('s3')->put('images', $request->image2, 'public');
-            $obj->image2 = "https://tungnguyenc3.s3.amazonaws.com/".$pathImage;
+            $obj->image2 = $pathImage;
         }
     }
 
