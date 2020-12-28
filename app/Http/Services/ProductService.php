@@ -4,6 +4,7 @@
 namespace App\Http\Services;
 
 use App\Http\Repositories\ProductRepository;
+use Illuminate\Support\Facades\Storage;
 
 class ProductService implements ServiceInterface
 {
@@ -65,14 +66,17 @@ class ProductService implements ServiceInterface
     }
     function uploadImage1($obj, $request){
         if ($request->hasFile('image1')) {
-            $pathImage = $request->file('image1')->store('public/images');
-            $obj->image1 = $pathImage;
+//            $pathImage = $request->file('image1')->store('public/images');
+
+            $pathImage = Storage::disk('s3')->put('images', $request->image1, 'public');
+
+            $obj->image1 = "https://tungnguyenc3.s3.amazonaws.com/".$pathImage;
         }
     }
     function uploadImage2($obj, $request){
         if ($request->hasFile('image2')) {
-            $pathImage = $request->file('image2')->store('public/images');
-            $obj->image2 = $pathImage;
+            $pathImage = Storage::disk('s3')->put('images', $request->image2, 'public');
+            $obj->image2 = "https://tungnguyenc3.s3.amazonaws.com/".$pathImage;
         }
     }
 
