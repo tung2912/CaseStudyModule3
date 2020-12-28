@@ -9,6 +9,7 @@ use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Http\Requests\CreateProductRequest;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
 {
@@ -60,6 +61,8 @@ class ProductController extends Controller
     public function destroy($id)
     {
         $product = $this->productService->findByID($id);
+        Storage::delete($product->image1);
+        Storage::delete($product->image2);
         $product->delete();
         return redirect()->route('products.index')->with('deleteSuccess','Successfully deleted');
     }
