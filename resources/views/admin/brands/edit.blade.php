@@ -28,9 +28,9 @@
                             </div>
                             <div class="form-group">
                                 <label for="inputName">Brand Image</label>
-                                <input type="text" name="brandImage" id="inputName" placeholder="Input Category Image"
+                                <input type="text" name="brandImage" id="inputName" placeholder="Input Brand Image"
                                        class="form-control" value="{{$brand->image??""}}">
-                                @error('categoryImage')
+                                @error('brandImage')
                                 <div style="color: red">{{ $message }}</div>
                                 @enderror
                             </div>
