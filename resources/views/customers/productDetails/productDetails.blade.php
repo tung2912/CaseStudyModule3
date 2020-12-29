@@ -21,7 +21,7 @@
                     <div class="row">
                         <div class="col-3">
                             <img class="smallImg mb-3" src="{{$product->getNameImage1()}}" alt="" onclick="myFunction(this);">
-                            <img class="smallImg mb-3" src="{{$product->getNameImage2()}}" alt="" onclick="myFunction(this);">
+                            <img class="smallImg mb-3" src="{{$product->getNameImage2() ?? ""}}" alt="" onclick="myFunction(this);">
                         </div>
                         <div class="col-9"><img class="bigImg" id="expandedImg" src="{{$product->getNameImage1()}}" alt=""></div>
                     </div>
