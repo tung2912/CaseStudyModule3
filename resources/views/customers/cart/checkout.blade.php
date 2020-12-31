@@ -51,7 +51,7 @@
                             @enderror
                         </div>
                         <div class="form-floating mt-2">
-                            <textarea name="notes"  placeholder="Ghi chú"></textarea>
+                            <textarea name="notes" cols="15" rows="10" placeholder="Ghi chú"></textarea>
                         </div>
                         <div class="float-left mt-2">
                             <a href="{{route('cart.showCart')}}" class="cart_return">
