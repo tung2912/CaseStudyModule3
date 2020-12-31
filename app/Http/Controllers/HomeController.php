@@ -38,7 +38,7 @@ class HomeController extends Controller
         return view('customers.allProducts',compact('categories','brands'));
     }
 
-    public function searchProductByName(Request $request) {
+    public function searchProduct(Request $request) {
         $searchValue = $request->searchValue;
         $products = Product::where('name','like',"%$searchValue%")->get();
         $brands = Brand::all();

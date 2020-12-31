@@ -31,7 +31,7 @@ Route::get('/productDetails/{product_id}',[HomeController::class,'showProductDet
 Route::get('/about',[HomeController::class,'about'])->name('home.about');
 Route::get('/contact',[HomeController::class,'contact'])->name('home.contact');
 Route::get('/allProducts',[HomeController::class,'allProducts'])->name('home.allProducts');
-Route::post('searchProduct',[HomeController::class,'searchProductByName'])->name('category.search');
+Route::post('searchProduct',[HomeController::class,'searchProduct'])->name('category.search');
 Route::get('/brand/{brand_id}',[HomeController::class,'showProductByBrand'])->name('brand.show');
 Route::get('/category/{category_id}',[HomeController::class,'showProductByCategory'])->name('category.show');
 
