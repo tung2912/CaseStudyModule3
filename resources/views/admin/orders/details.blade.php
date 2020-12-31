@@ -34,6 +34,11 @@
                             <input type="text" value="{{$order->customer->phone}}" disabled
                                    class="form-control">
                         </div>
+                        <div class="form-group">
+                            <label for="inputName">Notes</label>
+                            <input type="text" value="{{$order->notes}}" disabled
+                                   class="form-control">
+                        </div>
                     </div>
                     <!-- /.card-body -->
                 </div>
