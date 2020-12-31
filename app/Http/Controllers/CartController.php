@@ -94,6 +94,7 @@ class CartController extends Controller
 
         $order = new Order();
         $order->customer_id = $customer->id;
+        $order->status = "1";
         $order->notes = $request->notes;
         $order->save();
         $order_id = $order->id;

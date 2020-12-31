@@ -80,7 +80,7 @@
                                         <td>{{$product->name}}</td>
                                         <td>{{$product->pivot->buy_quantity}}</td>
                                         <td><img style="width: 100px; height: 100px"
-                                                 src="{{asset('storage/'.substr($product->image1,7))}}"></td>
+                                                 src="{{$product->getNameImage1()}}"></td>
                                         <td>{{number_format($product->pivot->priceEach)}} Đ</td>
                                 </tr>
                                 @empty
