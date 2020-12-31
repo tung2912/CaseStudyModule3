@@ -41,7 +41,6 @@ class HomeController extends Controller
     public function searchProduct(Request $request) {
         $searchValue = strtoupper($request->searchValue) ;
         $products = Product::where('name','like',"%$searchValue%")->get();
-        dd($products);
         $brands = Brand::all();
         $categories = Category::all();
         return view('customers.categories.searchProducts',compact('products','brands','categories'));
