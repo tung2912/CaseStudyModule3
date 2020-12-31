@@ -50,7 +50,7 @@
                             <div style="color: red">{{ $message }}</div>
                             @enderror
                         </div>
-                        <div class="form-group mt-2">
+                        <div class="form-floating mt-2">
                             <textarea name="notes"  placeholder="Ghi chú"></textarea>
                         </div>
                         <div class="float-left mt-2">
