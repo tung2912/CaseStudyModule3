@@ -20,7 +20,7 @@ class CartController extends Controller
         $cart = new Cart($oldCart);
         $cart->add($product);
         session()->put('cart',$cart);
-        return back()->with('successAddToCart','Thêm thành công');
+        return back()->with('successAddToCart','Thêm thành công',["positionClass"=>"toast-top-center"]);
     }
 
     public function showCart(){
