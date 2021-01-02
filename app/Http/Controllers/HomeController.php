@@ -39,7 +39,7 @@ class HomeController extends Controller
     }
 
     public function searchProduct(Request $request) {
-        $searchValue = $request->searchValue;
+        $searchValue = strtoupper($request->searchValue) ;
         // dd($searchValue);
         $products = Product::where('name','LIKE',"%$searchValue%")->get();
         $brands = Brand::all();
