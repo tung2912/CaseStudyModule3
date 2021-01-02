@@ -40,8 +40,8 @@ class HomeController extends Controller
 
     public function searchProduct(Request $request) {
         $searchValue = strtoupper($request->searchValue) ;
-        dd($searchValue);
-        $products = Product::where('name','LIKE','%'.$searchValue.'%')->get();
+        // dd($searchValue);
+        $products = Product::where('name','LIKE','[[:<:]]'.$searchValue.'[[:>:]]')->get();
         $brands = Brand::all();
         $categories = Category::all();
         return view('customers.categories.searchProducts',compact('products','brands','categories'));
