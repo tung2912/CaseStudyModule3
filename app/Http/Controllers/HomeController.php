@@ -18,11 +18,15 @@ class HomeController extends Controller
     }
 
     public function about() {
-        return view('customers.about');
+        $brands = Brand::all();
+        $categories = Brand::all();
+        return view('customers.about',compact('categories','brands'));
     }
 
     public function contact() {
-        return view('customers.contact');
+        $brands = Brand::all();
+        $categories = Brand::all();
+        return view('customers.contact',compact('brands','categories'));
     }
 
     public function showIndex() {
