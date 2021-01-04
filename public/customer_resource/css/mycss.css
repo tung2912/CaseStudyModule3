@@ -1091,7 +1091,10 @@ footer .bottom .share a{
         transition: 200ms ease-in-out;
         font-size: 12px;
     }
-
+/* toast */
+.toast-top-right {
+    top:20%!important;
+}
 
 
 
