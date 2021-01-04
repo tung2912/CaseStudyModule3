@@ -39,4 +39,5 @@
             @endforeach
         </div>
     </div>
+    <div class="pt50"></div>
 @endsection
