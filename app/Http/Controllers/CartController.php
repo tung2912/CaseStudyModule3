@@ -15,11 +15,11 @@ use Illuminate\Support\Facades\DB;
 class CartController extends Controller
 {
     public function addToCart($idProduct){
+        $message = 'Thêm sản phẩm thành công';
         $product = Product::findOrFail($idProduct);
         $oldCart = session('cart') ? session('cart'):null;
         $cart = new Cart($oldCart);
         $cart->add($product);
-        $message = 'Thêm sản phẩm thành công';
         session()->put('cart',$cart);
         return back()->with('success',$message);
     }
@@ -32,6 +32,7 @@ class CartController extends Controller
     }
 
     public function destroy($idProduct){
+        $message = 'Xóa thành công';
         $product = Product::findOrFail($idProduct);
         $oldCart = session('cart') ? session('cart') :null;
         $cart = new Cart($oldCart);
@@ -44,11 +45,12 @@ class CartController extends Controller
         {
             session()->forget('cart');
         }
-        return back()->with('successDelete','Xóa thành công');
+        return back()->with('success',$message);
     }
 
     public function decrease($idProduct)
     {
+        $message = 'Cập nhật thành công';
         $product = Product::findOrFail($idProduct);
         $oldCart = session('cart') ? session('cart') :null;
         $cart = new Cart($oldCart);
@@ -61,7 +63,7 @@ class CartController extends Controller
         {
             session()->forget('cart');
         }
-        return back()->with('successDecrease','Cập nhật thành công');
+        return back()->with('success',$message);
     }
 
 //    public function update($idProduct,Request $request) {
@@ -75,8 +77,9 @@ class CartController extends Controller
 //    }
 
     public function removeCart(){
+        $message = 'Xóa thành công';
         session()->forget('cart');
-        return back()->with('successDelete','Xóa thành công');
+        return back()->with('success',$message);
     }
 
     public function checkOut(){
@@ -118,8 +121,9 @@ class CartController extends Controller
 //            $product->increment('sold',$item['totalQty']);
 
         }
+        $message = 'Bạn đã đặt hàng thành công, xin cảm ơn';
         session()->forget('cart');
-        return redirect()->route('cart.showCart')->with('checkOutSuccess','Bạn đã đặt hàng thành công');
+        return redirect()->route('cart.showCart')->with('success',$message);
 
     }
 }
