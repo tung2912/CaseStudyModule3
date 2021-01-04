@@ -39,5 +39,5 @@
             @endforeach
         </div>
     </div>
-    <div class="pt50"></div>
+    <div class="mt20"></div>
 @endsection
