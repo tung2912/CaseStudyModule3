@@ -19,8 +19,9 @@ class CartController extends Controller
         $oldCart = session('cart') ? session('cart'):null;
         $cart = new Cart($oldCart);
         $cart->add($product);
+        $message = 'Thêm sản phẩm thành công';
         session()->put('cart',$cart);
-        return back()->with('successAddToCart','Thêm thành công');
+        return back()->with('success',$message);
     }
 
     public function showCart(){

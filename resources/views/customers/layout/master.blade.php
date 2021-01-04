@@ -234,6 +234,26 @@
         integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
         crossorigin="anonymous"></script>
 <script src="{{asset('ckeditor/ckeditor.js')}}"></script>
+<script>
+
+toastr.options = {
+  "closeButton": false,
+  "debug": false,
+  "newestOnTop": false,
+  "progressBar": false,
+  "positionClass": "toast-bottom-right",
+  "preventDuplicates": false,
+  "onclick": null,
+  "showDuration": "300",
+  "hideDuration": "1000",
+  "timeOut": "5000",
+  "extendedTimeOut": "1000",
+  "showEasing": "swing",
+  "hideEasing": "linear",
+  "showMethod": "fadeIn",
+  "hideMethod": "fadeOut"
+}
+</script>
 @if(\Illuminate\Support\Facades\Session::has('checkOutSuccess'))
     <script>
         toastr.success("{!! Session::get('checkOutSuccess') !!}")
@@ -244,9 +264,9 @@
         toastr.success("{!! Session::get('successDecrease') !!}")
     </script>
 @endif
-@if(\Illuminate\Support\Facades\Session::has('successAddToCart'))
+@if(\Illuminate\Support\Facades\Session::has('success'))
     <script>
-        toastr.success("{!! Session::get('successAddToCart') !!}")
+        toastr["success"]("{!! Session::get('success') !!}", "Success")
     </script>
 @endif
 @if(\Illuminate\Support\Facades\Session::has('successDelete'))
