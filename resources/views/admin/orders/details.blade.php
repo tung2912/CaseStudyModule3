@@ -34,6 +34,46 @@
                             <input type="text" value="{{$order->customer->phone}}" disabled
                                    class="form-control">
                         </div>
+
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">Oder Informations</h3>
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse"
+                                    data-toggle="tooltip" title="Collapse">
+                                <i class="fas fa-minus"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="inputName">Order number</label>
+                            <input type="text" value="{{$order->id}}" disabled
+                                   class="form-control ">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputName">Order date</label>
+                            <input type="text" value="{{$order->created_at}}" disabled
+                                   class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputName">Total Price</label>
+                            <input type="text" value="{{$order->total?$order->total:''}}" disabled
+                                   class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputName">Notes</label>
+                            <input type="text" value="{{$order->notes}}" disabled
+                                   class="form-control">
+                        </div>
                         <div class="form-group">
                             <label for="inputName">Notes</label>
                             <input type="text" value="{{$order->notes}}" disabled
