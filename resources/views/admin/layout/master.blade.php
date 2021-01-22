@@ -148,6 +148,11 @@
         toastr.success("{!! Session::get('successChangeStatus') !!}")
     </script>
 @endif
+@if(\Illuminate\Support\Facades\Session::has('error'))
+    <script>
+        toastr.success("{!! Session::get('error') !!}")
+    </script>
+@endif
 @yield('js')
 </body>
 </html>

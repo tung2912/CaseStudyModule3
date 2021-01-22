@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Services\CategoryService;
 use App\Models\Category;
+use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Http\Requests\CreateCategoryRequest;
 
@@ -48,7 +49,10 @@ class CategoryController extends Controller
     }
 
     public function destroy($id)
-    {
+    {   $product = Product::where('category_id',$id)->get();
+        if(count($product)) {
+            return redirect()->back()->with("error",'Please delete product first');
+        }
         $category = $this->categoryService->findByID($id);
         $category->delete();
         return redirect()->route('categories.index')->with('deleteSuccess','Successfully deleted');
