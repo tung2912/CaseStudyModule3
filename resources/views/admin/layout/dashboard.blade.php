@@ -13,7 +13,7 @@
                         <div class="icon">
                             <i class="ion ion-bag"></i>
                         </div>
-                        <a href="#" class="small-box-footer" style="font-size: 20px">{{ $orderOfMonth }}<i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="#" class="small-box-footer" style="font-size: 30px;font-weight:bolder">{{ $orderOfMonth }}</i></a>
                     </div>
                 </div>
                 <!-- ./col -->
