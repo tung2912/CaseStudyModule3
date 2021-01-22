@@ -14,7 +14,7 @@ class AddTotalColumnToOrdersTable extends Migration
     public function up()
     {
         Schema::table('orders', function (Blueprint $table) {
-            //
+            $table->decimal('total',10,2)->nullable()->after('customer_id');
         });
     }
 
@@ -26,7 +26,7 @@ class AddTotalColumnToOrdersTable extends Migration
     public function down()
     {
         Schema::table('orders', function (Blueprint $table) {
-            $table->decimal('total',10,2)->nullable()->after('customer_id');
+            //
         });
     }
 }
