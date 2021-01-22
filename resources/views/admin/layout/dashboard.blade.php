@@ -8,12 +8,12 @@
                     <!-- small box -->
                     <div class="small-box bg-info">
                         <div class="inner">
-                            <h3>Orders number of month </h3>
+                            <h3>Order's numbers of month </h3>
                         </div>
                         <div class="icon">
                             <i class="ion ion-bag"></i>
                         </div>
-                        <a href="#" class="small-box-footer">{{ $orderOfMonth }}</a>
+                        <a href="#" class="big-box-footer">{{ $orderOfMonth }}</a>
                     </div>
                 </div>
                 <!-- ./col -->
