@@ -102,10 +102,9 @@ class CartController extends Controller
         $order->customer_id = $customer->id;
         $order->status = "1";
         $order->notes = $request->notes;
+        $order->total = $cart->totalPrice;
         $order->save();
         $order_id = $order->id;
-        $order->total = $cart->totalPrice;
-
         foreach ($cart->items as $item)
         {
             $product_id = $item['product']->id;
