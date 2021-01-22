@@ -40,9 +40,6 @@
                 </div>
                 <!-- /.card -->
             </div>
-        </div>
-
-        <div class="row">
             <div class="col-12 col-md-6">
                 <div class="card card-primary">
                     <div class="card-header">
@@ -66,12 +63,7 @@
                         </div>
                         <div class="form-group">
                             <label for="inputName">Total Price</label>
-                            <input type="text" value="{{$order->total?$order->total:''}}" disabled
-                                   class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="inputName">Notes</label>
-                            <input type="text" value="{{$order->notes}}" disabled
+                            <input type="text" value="{{ number_format($order->total) }}.VND" disabled
                                    class="form-control">
                         </div>
                         <div class="form-group">
