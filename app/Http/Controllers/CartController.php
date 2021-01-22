@@ -97,14 +97,15 @@ class CartController extends Controller
         $customer->save();
 
         $order = new Order();
+        $oldCart = session('cart') ? session('cart') :null;
+        $cart = new Cart($oldCart);
         $order->customer_id = $customer->id;
         $order->status = "1";
         $order->notes = $request->notes;
         $order->save();
         $order_id = $order->id;
+        $order->total = $cart->totalPrice;
 
-        $oldCart = session('cart') ? session('cart') :null;
-        $cart = new Cart($oldCart);
         foreach ($cart->items as $item)
         {
             $product_id = $item['product']->id;
