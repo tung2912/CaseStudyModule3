@@ -15,6 +15,6 @@ class DashboardController extends Controller
         $endOfDay = Carbon::now()->endOfDay();
         $orderOfMoth  = Order::whereBetween('created_at',[$startOfMoth,$endOfDay])->get()->count();
         $orderOfDay = Order::whereBetween('created_at',[$startOfDay,$endOfDay])->get()->count();
-        return view('admin.layout.dashboard');
+        return view('admin.layout.dashboard',compact('orderOfMonth','orderOfDay'));
     }
 }
